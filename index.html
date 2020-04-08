@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Animatetd Login-Register Form</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link type="text/css" rel="stylesheet" href="style.css">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <link type="text/css" rel="stylesheet" href="style.css">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-</head>
-
-<body>
-    <div class="login-reg-panel">
-        <div class="login-info-box">
-            <h2>Have an account?</h2>
-            <p>Login with your account</p>
-            <label id="label-register" for="log-reg-show">Login</label>
-            <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
-        </div>
-
-        <div class="register-info-box">
-            <h2>Don't have an account?</h2>
-            <p>Create an account with Register form</p>
-            <label id="label-login" for="log-login-show">Register</label>
-            <input type="radio" name="active-log-panel" id="log-login-show">
-        </div>
-
-        <div class="white-panel">
-            <div class="login-show">
-                <h2>LOGIN</h2>
-                <input type="text" placeholder="Insert email">
-                <input type="password" placeholder="Insert password">
-                <input type="button" value="Login">
-                <a href="">Forgot password?</a>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </head>
+    <body>
+        <div class="login-reg-panel">
+            <div class="login-info-box">
+                <h3>Have an account?</h3>
+                <p>Login with your account</p>
+                <label id="label-register" for="log-reg-show">Login</label>
+                <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
             </div>
-            <div class="register-show">
-                <h2>REGISTER</h2>
-                <input type="text" placeholder="Insert email">
-                <input type="password" placeholder="Insert password">
-                <input type="password" placeholder="Confirm password">
-                <input type="button" value="Register">
+
+            <div class="register-info-box">
+                <h3>Don't have an account?</h3>
+                <p>Create an account with Register form</p>
+                <label id="label-login" for="log-login-show">Register</label>
+                <input type="radio" name="active-log-panel" id="log-login-show">
+            </div>
+
+            <div class="white-panel">
+                <div class="login-show">
+                    <h3>LOGIN</h3>
+                    <div class="input-field col s6">
+                        <input id="email_login" type="text" class="validate">
+                        <label for="email_login">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="password_login" type="text" class="validate">
+                        <label for="password_login">Password</label>
+                    </div>
+                    <input type="button" value="Login">
+                    <a href="">Forgot password?</a>
+                </div>
+                <div class="register-show">
+                    <h3>REGISTER</h3>
+                    <div class="input-field col s6">
+                        <input id="email_registration" type="text" class="validate">
+                        <label for="email_registration">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="password_registration" type="text" class="validate">
+                        <label for="password_registration">Password</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="confirm_password" type="text" class="validate">
+                        <label for="confirm_password">Confirm Password</label>
+                    </div>
+                    <input type="button" value="Register">
+                </div>
             </div>
         </div>
-    </div>
-    <script src="main.js"></script>
-
-</body>
-
+        <script src="main.js"></script>
+    </body>
 </html>
